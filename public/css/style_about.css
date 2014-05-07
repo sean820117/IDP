@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+	font-family: "微軟正黑體", "Microsoft JhengHei", arial;
+}
+
+#title{
+
+}
+
+#header {
+	background: #333333;
+	height: 90px;
+	width: 100%;
+	text-align: center;
+}
+#header img {
+	width:70px;
+	margin-top:15px; 
+}
+
+.line {
+	width:90%;
+}
+
+.content {
+	text-align: center;
+}
+.about_team {
+	text-align: center;
+}
+
+.about_team p {
+	color: #808080;
+}
+.about_member {
+	width: 100%;
+}
+.about_member img {
+	width: 800px;
+}
+.smallpic_container img{
+	width: 70px;
+	margin: 3px;
+}
+#cover{
+	background:url(../images/bigp01.jpg) no-repeat; 
+	background-size:800px;
+	position: relative;
+	width: 400px;
+	height: 363px;	
+	margin-bottom: -363px;
+}
+.text_intro {
+	position: absolute;
+	margin-top: 3%;
+	z-index: 100;
+}
+.text_intro h3 {
+	font-size: 50px;
+	margin: 10px;
+}
+.left_intro {
+	margin-left: 14%;
+}
+.right_intro {
+	margin-left: 70%;
+}
