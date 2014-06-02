@@ -37,13 +37,37 @@
 | in the URL cannot be matched to a valid route.
 |
 */
+/* test */
+$route['about'] = 'pages/about';
+$route['test'] = 'pages/test';
+
+
+/* calendar */
+$route['big_calendar'] = 'calendars/big_calendar';
+$route['calendars/set_event/(:any)'] = 'calendars/set_event_to_calendar/$1';
+
+/* user */
+$route['login/(:any)'] = 'users/login/$1';
+$route['logout'] = 'users/logout';
+$route['friendlist'] = 'users/friendlist_fb';
+$route['userlist'] = 'users/user_list';
+
+/* infos */
 $route['developer'] = 'infos/parse_intern';
 $route['parse_art'] = 'infos/parse_art';
-$route['login'] = 'users/login';
+$route['parse_exchange'] = 'infos/parse_exchange';
+$route['parse_volunteer'] = 'infos/parse_volunteer';
+$route['index_get_data/(:any)'] = 'infos/index_get_data/$1';
+$route['home'] = 'infos/home';
 $route['infos/view/(:any)'] = 'infos/view/$1';
 $route['infos/(:any)'] = 'infos/category/$1';
 $route['infos'] = 'infos/index';
-$route['about'] = 'pages/about';
+$route['new'] = 'infos/newpage';
+$route['insert'] = 'infos/insert';
+$route['edit/(:any)'] = 'infos/editpage/$1';
+$route['update'] = 'infos/update';
+$route['categories/(:any)'] = 'infos/get_sub_categories/$1';
+
 $route['default_controller'] = "infos/index";
 $route['(:any)'] = 'pages/view/$1';
 

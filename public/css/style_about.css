@@ -1,10 +1,8 @@
-body {
-	margin: 0;
-	font-family: "微軟正黑體", "Microsoft JhengHei", arial;
-}
 
-#title{
 
+#title_yo{
+	margin-top: 70px;
+	width: 35%;
 }
 
 #header {
@@ -34,6 +32,8 @@ body {
 }
 .about_member {
 	width: 100%;
+	height: 42%;
+	overflow: hidden;
 }
 .about_member img {
 	width: 800px;
@@ -61,7 +61,22 @@ body {
 }
 .left_intro {
 	margin-left: 14%;
+	margin-top: -2%;
 }
 .right_intro {
 	margin-left: 70%;
+	margin-top: -2%;
+}
+#bigp{
+	width:40%;
+}
+.smallp{
+	position: relative;
+	width: 3% !important;
+	z-index: 1000;
+}
+.big_pic{
+	margin-top: -20px;
+
+
 }

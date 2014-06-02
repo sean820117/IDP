@@ -1,8 +1,23 @@
+body{
+	margin: auto;
+}
+li{
+	position: relative;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+}
 .block{
 	float: left;
-	width: 227px;
-	height: 108px;
-	background-image:url(../images/sticky.png);
+	width: 284px;
+	height: 306px;
+	background-image:url(../images/sticky_3.png);
 	text-align: center;
 	margin-left:11px;
 	margin-top:9px;
@@ -20,9 +35,8 @@
 	text-align: center;
 	margin: auto;
 	padding-bottom: 60px;
-	background-color: #A6A6A6;
+	
 }
-
 .empty_block{
 	margin:5px;
 	float: left;
@@ -32,28 +46,38 @@
 }
 
 #coverphoto{
-	margin-top: 118px;
 	width:971px;
 	height:187px;
 }
-
-h4.info_title {
-	margin:0 10px;
-	height:52px;
-	overflow: hidden;
+#player{
+	margin-top: 80px;
 }
+.block:before {
+  	content: '';
+  	display: inline-block;
+  	vertical-align: middle ;
+  	height: 100%;
+}
+h4.info_title {
+	position: relative;
+	width: 220px;
+	height:auto;
+	overflow: auto;
+	margin-left: -45px;
+	margin-top: -50px;
+	
 
-h4.info_title a {
-	text-decoration: none;
 	color: black;
+	display: inline-block;
+    vertical-align: middle;
 }
 
 #blockinfo{
 	position: absolute;
-	bottom: 22px;
+	bottom: 31px;
 	color:#000000;
 	font-size: 12pt;
-	left: 10px;
+	left: 40px;
 }
 #cover_tag{
 	position: relative;
@@ -130,44 +154,47 @@ h4.info_title a {
 	height:23px;
 }
 .block_tag{
-	width: 84px;
-	height:23px;
-	background-color: #4D4D4D;
+	position: relative;
+	width: 86px;
+	height:48px;
 	float: left;
-	color:#999999;
-
-	-moz-background-size:cover;
-	-webkit-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;
-
-	-webkit-border-top-left-radius: 15px;
-	-moz-border-radius-topleft: 15px;
-	border-top-left-radius: 15px;
-
-	display:-ms-flexbox;
-	-ms-flex-pack:center;
-	-ms-flex-align:center;
-	/* Firefox */
-	display:-moz-box;
-	-moz-box-pack:center;
-	-moz-box-align:center;
-	/* Safari, Chrome, and Opera */
-	display:-webkit-box;
-	-webkit-box-pack:center;
-	-webkit-box-align:center;
-	/* W3C */
-	display:box;
-	box-pack:center;
-	box-align:center;
+	font-size: 20px;
+	margin-left: 50%;
+	left: -400px;
+	bottom: -35px;
+	font-weight: bold;
 }
 #block_tag_2{
-	margin-left: 5px;
-	background-color: #4D4D4D;
+	margin-left: 40px;
 }
 #block_tag_3{
-	margin-left: 5px;
-	background-color: #4D4D4D;
+	margin-left: 40px;
+}
+#block_tag_4{
+	margin-left: 40px;
+}
+.color_box{
+	background-color: #8C6239;
+	width: 84px;
+	height: 7px;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+#block_tag_1:hover #color1{
+	display: block;
+}
+#block_tag_2:hover #color2{
+	display: block;
+}
+#block_tag_3:hover #color3{
+	display: block;
+}
+#block_tag_4:hover #color4{
+	display: block;
+}
+.class_a{
+	color: black;
 }
 .add_calendar{
 	width:30px;
@@ -178,50 +205,16 @@ h4.info_title a {
 	position: relative;
 	z-index: 2;
 }
-#calendar{
-	width:1190px;
-	height:117px;
-	position: fixed;
-	bottom: -67px;
-	left:50%;
-	margin-left:-595px; 
-}
-.calendar_block{
-	width:38px;
-	height:100px;
-	float: left;
-	position: relative;
-	margin-top: -26px;
-	z-index: 2;
-}
-#day_01{
-	margin-left: 36px;
-}
-#cal_mid{
-	position: relative;
-	z-index: 3;
-}
-.small_sticky_1{
-	width: 32px;
-	height: 29px;
-	position:absolute;
-	top:28px;
-	left:6px;
-	//background-image: url("../images/small_sticky.png");
-}
-.small_sticky_2{
-	width: 32px;
-	height: 29px;
-	position:absolute;
-	top:60px;
-	left:6px;
-	//background-image: url("../images/small_sticky.png");
-}
 .add_symbol{
 	position: absolute;
-	left:0;
-	top:0;
+	left:-16px;
+	top:-16px;
 	width: 60px;
 	height: 58px;
 	z-index: 0;
+}
+.btn_invite {
+	position: absolute;
+	right: 40px;
+	bottom: 50px;
 }

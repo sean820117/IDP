@@ -39,6 +39,7 @@
 
 $autoload['packages'] = array();
 
+$autoload['libraries'] = array('session');
 
 /*
 | -------------------------------------------------------------------
@@ -80,7 +81,7 @@ $autoload['helper'] = array();
 |
 */
 
-$autoload['config'] = array();
+$autoload['config'] = array('gcalconfig');
 
 
 /*

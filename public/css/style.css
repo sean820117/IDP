@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	font-family: "微軟正黑體", "Microsoft JhengHei", arial;
-	background-color: #cccccc;
+	background-color: #E9E4D8;
 	position: absolute;
 }
 #header {
@@ -94,4 +94,30 @@ body {
 	margin-top: 5px;
 	width:16px;
 	height:16px;
+}
+
+#insertbox{
+	width:553px;
+	height:424px;
+	background-image:url(../images/insert_box.png);
+	margin-top: 250px;
+	text-align: left;
+
+	display:-ms-flexbox;
+	-ms-flex-pack:center;
+	-ms-flex-align:center;
+	/* Firefox */
+	display:-moz-box;
+	-moz-box-pack:center;
+	-moz-box-align:center;
+	/* Safari, Chrome, and Opera */
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	/* W3C */
+	display:box;
+	box-pack:center;
+	box-align:center;
+
+
 }

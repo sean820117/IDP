@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
-         
+        $("#cover").css("background-size",$("#bigp").width());
+		$("#cover").css("width",$("#bigp").width()/2);
 
          // trims it to 17 charcters     
            $cut1=$('#titletrim').text().substr(0,5);
@@ -39,8 +40,9 @@ $(document).ready(function () {
 		$(".about_member").css({opacity:0.1});
 		$(".about_member").animate({opacity:1},500);
 		$("#cover").css("background","url(http://merry.ee.ncku.edu.tw/~sean820117/sdinfo/public/images/bigp0"+j+".jpg) no-repeat");
-		$("#cover").css("background-size","800px");
-		$("#cover").css("width","400px");
+		$("#cover").css("background-size",$("#bigp").width());
+		$("#cover").css("width",$("#bigp").width()/2);
+
 
 
 		switch(j)
@@ -61,7 +63,7 @@ $(document).ready(function () {
 
 			case 3:
 				$("#name").text("朱柏勳");
-				$("#cover").css("width","413px");
+				//$("#cover").css("width","413px");
 				$("#department").text("工程部");
 				$("#about").html("Comment allez-vous?I am Terry.<br>看起來好像有點害羞但是其實很開朗<br>平常都在彈吉他和努力健身增肥<br>希望能在大學時代的尾聲多認識一些不同的人!");
 				$("#pro").html("網頁前後端/SQL<br>C/C++/C#<br>Android APP");
@@ -69,7 +71,7 @@ $(document).ready(function () {
 
 			case 4:
 				$("#name").text("羅敏慈");
-				$("#cover").css("width","420px");
+				//$("#cover").css("width","420px");
 				$("#department").text("行銷部");
 				$("#about").html("我來自水藍色的那顆星，<br>在星球上，<br>我愛運動、交朋友、熱愛冒險，<br>沒去過其他的星球，<br>如果你來自其他的星球，<br>也許可以交個朋友。");
 				$("#pro").html("組織規劃<br>行銷企劃<r>產業分析<br>消費者分析");
@@ -77,7 +79,7 @@ $(document).ready(function () {
 
 			case 5:
 				$("#name").text("鄭祖燁");
-				$("#cover").css("width","420px");
+				//$("#cover").css("width","420px");
 				$("#department").text("行銷部");
 				$("#about").html("大家好我是Josh<br>是個喜好自由和嘗試新事務的男孩<br>沒什麼特別的興趣就是喜歡和大家玩在一塊<br>雖然看起來滄桑但內心是個百分百的小孩<br>歡迎大家來認識我");
 				$("#pro").html("消費者分析<br>行銷企劃書<br>資料整合");
@@ -112,3 +114,16 @@ $(document).ready(function () {
 
 	
 	});
+
+
+function make() {
+		$("#titlemake").val("1234");
+		$("#categorymake").val("1234");
+		$("#timemake").val("1234");
+		$("#contentmake").val("1234");
+
+		
+
+
+		
+}

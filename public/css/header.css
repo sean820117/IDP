@@ -1,9 +1,11 @@
-html,body{
+body{
 	margin: 0 auto;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	background-color: #cccccc;
+	height: auto;
+	background-color: #FFFFFF;
+	min-height: 100%;
 }
 #head span{
 	cursor:pointer;
@@ -21,11 +23,12 @@ html,body{
 }
 #head{
 	position:fixed;
-	background-color: #4D4D4D;
+	background-color: #544830;
 	width: 100%;
-	height: 81px;
+	height: 50px;
 	min-width: 1024px;
-	z-index: 1000;
+	z-index: 1;
+	box-shadow:0px 0px 10px 4px #444444;
 }
 #head_block {
 	position:relative;
@@ -81,7 +84,7 @@ html,body{
 	border-style: none;
 	font-size: 14pt;
 	font-family: "微軟正黑體";
-
+	float: left;
 
 	-moz-background-size:cover;
 	-webkit-background-size:cover;
@@ -100,11 +103,14 @@ html,body{
 	border-top-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 }
+#btn{
+	margin-left: -30px;
+}
 .header_btn{
 	margin-left: 4px;
 	width:30px;
 	height:30px;
-	background-color: #2675A6;
+	float: left;
 	-webkit-border-radius: 3px;
 	-webkit-border-top-right-radius: 3px;
 	-webkit-border-bottom-left-radius: 3px;
@@ -116,6 +122,14 @@ html,body{
 	border-radius: 3px;
 	border-top-right-radius: 3px;
 	border-bottom-left-radius: 3px;
+}
+#ho{
+	width: 36px;
+	height:36px;
+}
+#header_btn_s{
+	width: 24px;
+	height: 24px;
 }
 .header_btn_img{
 	width: 30px;
@@ -130,26 +144,35 @@ html,body{
 	position: relative;
 	right: -840px;
 }
+#word{
+	width: 100px;
+	position: absolute;
+	float: left;
+	color:white;
+	font-family: "微軟正黑體";
+	font-size: 20px;
+	margin-left: 100%;
+	right:570px;
+	top: -11px;
+}
+#login{
+	width: 128px;
+	height: 38px;
+	position: absolute;
+	float: left;
+	margin-left: 100%;
+	right:440px;
+	margin-top: -20px;
+}
 #mid_1{
-	width:100%;
+	position: relative;
+	width:410px;
 	height:30px;
-	margin-top: 12px;
+	margin-left: 100%;
+	right:420px;
 
-	display:-ms-flexbox;
-	-ms-flex-pack:center;
-	-ms-flex-align:center;
-	/* Firefox */
-	display:-moz-box;
-	-moz-box-pack:center;
-	-moz-box-align:center;
-	/* Safari, Chrome, and Opera */
-	display:-webkit-box;
-	-webkit-box-pack:center;
-	-webkit-box-align:center;
-	/* W3C */
-	display:box;
-	box-pack:center;
-	box-align:center;
+	margin-top: 25px;
+	bottom:15;
 }
 #mid_2{
 	width:100%;
@@ -194,18 +217,15 @@ html,body{
 }
 #logo_pic{
 	position: absolute;
-	left: 132px;
+	left: 20px;
 	margin-top: -15px;
 }
 #ncku{
-	position: absolute;
-	left: 204px;
-	top: 47px;
-
 }
 #login_image{
 	
 }
+/*
 #login_block{
 	width:140px;
 	height:42px;
@@ -217,18 +237,21 @@ html,body{
 	display:-ms-flexbox;
 	-ms-flex-pack:center;
 	-ms-flex-align:center;
-	/* Firefox */
+	// Firefox 
 	display:-moz-box;
 	-moz-box-pack:center;
 	-moz-box-align:center;
-	/* Safari, Chrome, and Opera */
+	// Safari, Chrome, and Opera 
 	display:-webkit-box;
 	-webkit-box-pack:center;
 	-webkit-box-align:center;
-	/* W3C */
+	// W3C 
 	display:box;
 	box-pack:center;
 	box-align:center;
+}*/
+#login_block{
+	
 }
 #fb{
 	margin-left: 57px;
@@ -236,11 +259,40 @@ html,body{
 #twitter{
 	margin-left: 5px;
 }
+#fb_pic{
+	position: relative;
+	margin-left: 65px;
+	top: -32px;
+}
+#google_pic{
+	position: relative;
+	top: -32px;
+	margin-left: 2px;
+}
+#fb_big_head{
+	position: relative;
+	width: 25px;
+	height: 25px;
+}
+#logout_link {
+	position: relative;
+	top:-31px;
+	margin-left: 20px;
+	color: white;
+}
+#word a{
+	color: white;
+}
+#logout_word{
+	position: absolute;
+	margin-left: 30px;
+	top:-23px;
+}
 /**---------------------------------------footer---------------------------------------**/
 #footer{
 	width: 100%;
 	height: 32px;
-	background-color: #4D4D4D;
+	background-color: #544830;
 	position: fixed;
 	bottom: 0px;
 	color: #F2F2F2;
@@ -260,31 +312,16 @@ html,body{
 	display:box;
 	box-pack:center;
 	box-align:center;
+	text-align: center;
 }
 
 #footer a{
 	text-decoration: none;
 	color:white;
 }
+
+
 /**------------------------------------------------------------------------------------**/
 @media screen and (max-width: 950px){
-	#head{
-		position:absolute;
-		width: 1280px;
-		height: 81px;
-		z-index: 1000;
-	}
-	#mid_line{
-		margin-top: 7px;
-	}
-	#mid_1{
-		margin-top: 0px;
-	}
-	#mid_2{
-		margin-top: 0px;
-	}
-	#head_block {
-		width: 1280px;
-		margin-top: 10px;
-	}
+	
 }

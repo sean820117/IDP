@@ -1,0 +1,26 @@
+.invite_block {
+	display: none;
+	z-index: 9999;
+}
+
+.invite_box {
+	width: 400px;
+	background: white;
+}
+
+.invite_list {
+	text-align: left;
+	padding-left: 30px;
+}
+
+.invite_box p {
+	margin:0;
+	padding:10px;
+}
+
+#send_invite {
+	text-decoration: none;
+	font-size: 30px;
+	padding: 10px;
+	display:block;
+}

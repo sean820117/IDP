@@ -1,0 +1,112 @@
+#overlay{
+	position: relative;
+	top :0;
+	left: 0;
+
+	width: 100%;
+	min-width: 770px;
+
+	height: 100%;
+	min-height: 660px;
+
+	opacity: 0.9;
+	background-color: #222222;
+	z-index: 9999;
+	top:0;
+}
+#content_box{
+	position: relative;
+	width: 930px;
+	height: 500px;
+	//border: solid 1px;
+	z-index: 9999;
+	top:100px;
+	
+	//margin-left:50%;
+	//left:-500px;
+
+	margin: 0px auto;
+	margin-top: -700px;
+}
+#clik_ho{
+	width: 50px;
+	height: 50px;
+	background-color: #880000;
+}
+#content_information{
+	position:relative;
+	width:450px;
+	height:480px;
+	float:left;
+	background: url("../images/sticky_4.png");
+	background-size: 100%;
+	margin-top: -20px;
+}
+#content_social{
+	position:absolute;
+	//border: solid 1px;
+	left:470px;
+	width:300px;
+	height:500px;
+}
+#message{
+	border: solid 1px;
+	width:450px;
+	height:440px;
+	background-color: #F3F4E7;
+	overflow: scroll;
+
+	box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
+}
+#leave_ms{
+	//border: solid 1px;
+	width:300px;
+	height:75px;
+}
+#input_text{
+	height:30px;
+	width: 300px;
+	margin-top: 10px;
+}
+#light_content{
+	height: 30px;
+	width: 30px;
+	overflow: auto;
+	margin-top: 10px;
+	height: 190px;
+	width: 320px;
+}
+#title_block{
+	position: relative;
+	margin-top: 50px;
+	height: 110px;
+	width: 320px;
+}
+
+#light_title{
+	margin-top: 50px;
+	height: auto;
+	width: 320px;
+	font-weight: bold;
+	font-size: 20px;	
+}
+#biggest_block{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+
+	display: none;
+}
+#homu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+	z-index: 9999;
+	display: none;
+}

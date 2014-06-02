@@ -23,7 +23,26 @@ class Pages extends CI_Controller {
 
 		$this->load->helper('url');
 		$this->load->helper('simplehtmldom');
+		$this->load->view('templates/header', $data);
+		$this->load->view('pages/about', $data);
+		$this->load->view('templates/footer', $data);	
+	}
 
-		$this->load->view('pages/about', $data);	
+	public function test() {
+		$data['title'] = 'test';
+
+		$this->load->helper('url');
+		$this->load->helper('simplehtmldom');
+		//$this->load->library('gcal');
+
+		
+		//$calendar = $this->gcal->calendarGet(array(
+		  // 'calendarId' => 'primary',   // required
+		  // 'redirectURI' => 'http://merry.ee.ncku.edu.tw/~sean820117/sdinfo/test'  // defaults to the URL of the current page
+		//));
+
+		//$data['calendar'] = $calendar;
+		$this->load->view('templates/header', $data);
+		$this->load->view('/pages/test', $data);
 	}
 }
